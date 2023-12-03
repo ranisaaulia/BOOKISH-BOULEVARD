@@ -1,13 +1,25 @@
-# Bolevard Library
+# Bookish Boulevard
 
-Bolevard Library is an interactive web application that allows users to discover, track, and manage their reading lists effectively. It provides an intuitive interface to add books to your reading list, mark books as read or unread, and set borrowing and returning dates.
+Bookish Boulevard is a web application that enables users to manage their reading list. Users can add, delete, and mark books as read or unread. The application uses local storage to retain added books even after page refresh.
 
 ## Features
 
-- **Find Your Literary Treasure**: Search and discover your desired books by adding them to your reading list.
-- **Track Borrowing and Returning Dates**: Set borrowing and returning dates for books you borrow.
-- **Organize Books**: Separate your finished and unfinished reading lists for easy tracking.
-- **User-Friendly Interface**: Intuitive and straightforward design for seamless navigation.
+- **Add Books**: Add new books by providing the title, author, and publication year.
+- **Mark as Read/Unread**: Toggle books between read and unread states using checkboxes.
+- **Delete Books**: Remove books from the list using the delete button associated with each book.
+
+## Getting Started
+
+To run the application locally:
+
+1. Clone the repository: `git clone https://github.com/your-username/bookish-boulevard.git`
+2. Open the `index.html` file in your web browser.
+
+## Usage
+
+- **Adding a Book**: Click on the "Add New Book" section, fill in the book details, and click "Add Book" to include it in the list.
+- **Marking as Read/Unread**: Toggle the checkbox to mark a book as read or unread.
+- **Deleting a Book**: Click the "Delete" button associated with the book to remove it from the list.
 
 ## Technologies Used
 
@@ -15,28 +27,21 @@ Bolevard Library is an interactive web application that allows users to discover
 - CSS3
 - JavaScript
 
-## Getting Started
-
-To run the Bolevard Library application locally, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/yourusername/bolevard-library.git`
-2. Navigate to the project directory.
-3. Open `index.html` in your preferred web browser.
-
 ## Contributing
 
-Contributions are welcome! If you want to contribute to Bolevard Library, follow these steps:
+Contributions are welcome! To contribute to Bookish Boulevard:
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/yourfeature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/yourfeature`).
-5. Create a new Pull Request.
+2. Create a new branch (`git checkout -b feature`)
+3. Make modifications and commit changes (`git commit -am 'Add new feature'`)
+4. Push changes to the branch (`git push origin feature`)
+5. Create a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
-Special thanks to [contributors](CONTRIBUTORS.md) who helped to make this project better.
+- Thanks to [OpenAI](https://openai.com/) for providing assistance and inspiration for this project.
+- Special thanks to contributors who helped in improving this application.
