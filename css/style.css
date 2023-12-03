@@ -123,59 +123,6 @@ input[type=text], input[type=date], .btn-submit:focus {
     margin: auto 0;
 }
 
-.check-button {
-    width: 40px;
-    height: 40px;
-
-    background: url('../assets/check-outline.svg');
-    background-size: contain;
-    margin-left: auto;
-    cursor: pointer;
-    border: none;
-}
-
-.check-button:hover {
-    background: url('../assets/check-solid.svg');
-    background-size: contain;
-}
-
-.trash-button {
-    width: 40px;
-    height: 40px;
-
-    background: url('../assets/trash-outline.svg');
-    background-size: contain;
-    margin-left: 16px;
-    cursor: pointer;
-    border: none;
-}
-
-.trash-button:hover {
-    background: url('../assets/trash-fill.svg');
-    background-size: contain;
-}
-
-.undo-button {
-    width: 40px;
-    height: 40px;
-
-    background: url('../assets/undo-ouline.svg');
-    background-size: contain;
-    margin-left: auto;
-    cursor: pointer;
-    border: none;
-}
-
-.undo-button:hover {
-    background: url('../assets/undo-ouline.svg');
-    background-size: contain;
-}
-
-.check-button:focus, .trash-button {
-    outline: none;
-}
-
-
 @media only screen and (max-width: 1024px) {
     .wrapper {
         margin: 0;
@@ -211,10 +158,13 @@ input[type=text], input[type=date], .btn-submit:focus {
 
 .dark-theme .container-header {
     color: #f8f4f4; 
+    font-size: 25px;
 }
 
 .dark-theme .list-item {
-    color: #0e0d0d; 
+    color: #f1eded; 
+    font-size: 10px;
+    font-style: italic;
 }
 
 
@@ -239,36 +189,6 @@ input[type=text], input[type=date], .btn-submit:focus {
     vertical-align: middle;
   }
 
-  .check-button {
-    background-image: url('todoapps/assets/check-solid.svg'); 
-    width: 30px;
-    height: 30px;
-    animation: moveIcon 1s infinite alternate;
-  }
-
-  .trash-button {
-    background-image: url('todoapps/assets/trash-fill.svg'); 
-    width: 30px;
-    height: 30px;
-    animation: moveIcon 1s infinite alternate; 
-  }
-
-  .undo-button {
-    background-image: url('todoapps/assets/undo-ouline.svg');
-    width: 30px;
-    height: 30px;
-    animation: moveIcon 1s infinite alternate; 
-  }
-  
-  @keyframes moveIcon {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(10px); 
-    }
-  }
-
   .form {
     display: flex;
     flex-direction: column;
@@ -282,18 +202,13 @@ input[type=text], input[type=date], .btn-submit:focus {
 }
 
 
-/* .container-header {
-    transition: transform 0.3s ease-in-out;
-    animation-name: bounce;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+.finished-status {
+    color: green; /* Warna untuk buku yang telah selesai dibaca */
+    font-style: italic; /* Gaya huruf italic */
 }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-} */
+.unfinished-status {
+    color: red; /* Warna untuk buku yang belum selesai dibaca */
+    font-weight: bold; /* Gaya huruf bold */
+}
+
