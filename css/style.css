@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('https://i.pinimg.com/originals/24/3c/1d/243c1d709182329320633deb19f207b3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/24/3c/1d/243c1d709182329320633deb19f207b3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 1024px;
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text], input[type=date] {
+    font-family: Raleway, sans-serif;
+    background: #F5F1FF;
+    border: 2px solid #9475EA;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.btn-submit {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border: 2px solid #5F30E2;
+    color: black;
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #5F30E2;
+    color: white;
+}
+
+input[type=text], input[type=date], .btn-submit:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+.dark-theme {
+    background-color: #1e1e1e; 
+    color: #ffffff; 
+}
+
+.dark-theme header {
+    background: #2b2b2b; 
+    color: #f0ebeb; 
+}
+
+.dark-theme .container {
+    background: #333; 
+    color: #ffffff; 
+}
+
+.dark-theme .container-header {
+    color: #f8f4f4; 
+}
+
+.dark-theme .list-item {
+    color: #0e0d0d; 
+}
+
+
+.btn-submit {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #5F30E2;
+    color: white;
+}
+
+  header img {
+    width: 100px; 
+    height: auto; 
+    margin-left: 20px; 
+  }
+
+  header h1 {
+    font-weight: bold; 
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .check-button {
+    background-image: url('todoapps/assets/check-solid.svg'); 
+    width: 30px;
+    height: 30px;
+    animation: moveIcon 1s infinite alternate;
+  }
+
+  .trash-button {
+    background-image: url('todoapps/assets/trash-fill.svg'); 
+    width: 30px;
+    height: 30px;
+    animation: moveIcon 1s infinite alternate; 
+  }
+
+  .undo-button {
+    background-image: url('todoapps/assets/undo-ouline.svg');
+    width: 30px;
+    height: 30px;
+    animation: moveIcon 1s infinite alternate; 
+  }
+  
+  @keyframes moveIcon {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(10px); 
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menengahkan item dalam flexbox */
+    height: auto; /* Mengubah ketinggian sesuai konten */
+    margin-top: 20px; /* Jarak dari elemen di atasnya */
+}
+
+.form input[type="submit"] {
+    margin-top: 10px; /* Menambahkan jarak antara input dan tombol submit */
+}
+
+
+/* .container-header {
+    transition: transform 0.3s ease-in-out;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+} */
